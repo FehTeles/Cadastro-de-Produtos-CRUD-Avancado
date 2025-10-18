@@ -1,0 +1,33 @@
+POST http://localhost:3000/produtos
+Content-Type: application/json
+Accept-Language: pt-BR
+
+{
+  "nome": "Camiseta Branca",
+  "descricao": "Camiseta básica 100% algodão",
+  "preco": 49.90,
+  "quantidade": 30,
+  "categoria": "Roupas"
+}
+
+###
+
+GET http://localhost:3000/produtos?search=jeans
+
+###
+
+PUT http://localhost:3000/produtos/7e1dae91-a651-4542-82bc-7fb8237e7ce8
+Content-Type: application/json
+Accept-Language: pt-BR
+
+{
+  "nome": "Calça Jeans Preta",
+  "descricao": "Calça jeans preta tamanho G",
+  "preco": 54.90,
+  "quantidade": 25,
+  "categoria": "Roupas"
+}
+
+###
+
+DELETE http://localhost:3000/produtos/7e1dae91-a651-4542-82bc-7fb8237e7ce8
